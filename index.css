@@ -1,0 +1,414 @@
+/* Style the navigation menu */
+
+@font-face {
+    src: url("Fonts/OpenSans.ttf");
+    font-family: OpenSans;
+}
+
+body {
+	background-color: #ffffff;
+max-width: 400px;
+    margin: auto;
+animation: transition-inA 1.2s;
+}
+
+
+
+#text-opener {
+	padding-left: 20px;
+	font-size: 30px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #2C3E50;
+}
+
+@keyframes transition-inA {
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes transition-inB {
+	from {
+		opacity: 0;
+		transform: translateX(40px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+img {
+  height: auto;
+}
+
+#daftar-iqro {
+	animation: transition-inB 1.2s;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 1;
+    font-family: OpenSans;
+    color: #2C3E50;
+}
+
+#selengkapnya-btn {
+	display: block;
+	width: 100%;
+	margin-right:auto;
+	color: #FFFFFF;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background: #2F7CF2;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: OpenSans;
+}
+
+.btn {
+	animation: transition-inB 1.2s;
+	margin-right:auto;
+	color: #FFFFFF;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background: #dfe1e5;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: OpenSans;
+}
+
+
+#button-iqro {
+	margin-left: auto;
+	padding-right:20px;
+	font-size: 21px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #2C3E50;
+}
+
+#selamat-datang {
+	display: flex;
+	background: #2F7CF2;
+	margin-left:20px;
+	border-radius: 20px;
+	margin-right:20px;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	font-size: 22px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #ffffff;
+}
+
+#lanjutkan {
+
+	display: flex;
+	width: 100%;
+	background: #2F7CF2;
+	margin-left:auto;
+	border-radius: 0 20px 20px 0;
+	margin-right:20px;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #ffffff;
+}
+
+#lanjutkan-wrapper {
+	display: flex;	
+}
+
+#icon-lanjutkan {
+
+	display: flex;
+	background: #1664DC;
+	margin-left:20px;
+	border-radius: 20px 0 0 20px;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #ffffff;
+}
+
+#icon-nav-bawah-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 25px;
+}
+
+#icon-nav-bawah {
+
+	display: flex;
+	justify-content: space-between;
+	background: #2C3E50;
+	border-radius: 20px;
+	margin-top: 5px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	line-height: 1.2;
+    font-family: OpenSans;
+    color: #ffffff;
+}
+
+
+#ilustrasi1 {
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+#iqro-row1 img {
+    height: 95%;
+ 	width: 95%;
+ 	margin-right: 28px;
+
+}
+
+#iqro-row1 {
+	animation: transition-inB 1.2s;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom:10px;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #ffffff00;
+position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+	display: none;
+	justify-content: center;
+	color: #2C3E50;
+    font-family: OpenSans;
+
+}
+
+/* Style navigation menu links */
+.topnav a {
+color: #2C3E50;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 30px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+
+/* Style the active link (or home/logo) */
+.active {
+background-color: #ffffff00;
+color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 30% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  	color: #2C3E50;
+    font-family: OpenSans;
+    font-size: 19px;
+
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: OpenSans;
+  font-size: 16px;
+
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+/* LLLLLLANDINGGGGGG */
+
+#logo-opener {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo-outline {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text-opener-h1 {
+	animation: transition-inB 1.2s;
+	color: #FFFFFF;
+	font-size: 36px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.text-opener-h2 {
+	animation: transition-inB 1.2s;
+	color: #FFFFFF;
+	line-height: 1.4;
+	font-size: 18px;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#button-masuk-aplikasi-wrapper {
+	animation: transition-inB 1.2s;
+	display: block;
+	
+	size: 100%;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#button-masuk-aplikasi {
+	animation: transition-inB 1.2s;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	align-items: center;
+	background-color: #ffffff;
+	border: none;
+	color: #2C3E50;
+	padding: 18px;
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#button-masuk-aplikasi2 {
+	animation: transition-inB 1.2s;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	align-items: center;
+	background-color: #ffffff00;
+	border-style: solid;
+	border-color: #ffffff;
+	color: #ffffff;
+	padding: 18px;
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#credit-text {
+	color: #FFFFFF;
+	font-family: OpenSans;
+	line-height: 1.4;
+	font-size: 18px;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+	
